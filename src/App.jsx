@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import LandingPage from './components/LandingPage'
 
 function App() {
   
     return (
         <div className="App">
-            <h1 className = 'font-bold'>Hi I am Likhith</h1>
+            <LandingPage />
         </div>
     )
 
