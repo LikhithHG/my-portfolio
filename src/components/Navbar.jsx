@@ -1,38 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { navigationLinks } from "../utils/Route";
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-lg shadow-md z-50">
+        <nav className="fixed top-0 left-0 w-full bg-transparent z-50">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 className="text-white text-2xl font-semibold">
-                    <Link to="/">Likhith</Link>
+                <h1 className="text-yellow-400 text-2xl font-semibold font-[Dancing_Script]">
+                    <Link 
+                        to="landing-page"
+                        smooth={true} 
+                        duration={500}
+                        className="tracking-widest hover:cursor-pointer"
+                    >
+                        Likhith Murthy
+                    </Link>
                 </h1>
-                <div className="hidden md:flex space-x-8">
-                    <Link 
-                        to="/about" 
-                        className="text-white hover:text-blue-400"
-                    >
-                        About
-                    </Link>
-                    <Link 
-                        to="/experience" 
-                        className="text-white hover:text-blue-400"
-                    >
-                        Experience
-                    </Link>
-                    <Link 
-                        to="/projects" 
-                        className="text-white hover:text-blue-400"
-                    >
-                        Projects
-                    </Link>
-                    <Link 
-                        to="/contact" 
-                        className="text-white hover:text-blue-400"
-                    >
-                        Contact
-                    </Link>
-                </div>
+                <ul className="hidden lg:flex lg:items-center gap-16">
+                    {navigationLinks.map((navigationLink) => {
+                        const {title, to, Icon} = navigationLink;
+                        return (
+                            <li key = {to}>
+                                <Link
+                                    to={to}
+                                    smooth={true} 
+                                    duration={500}
+                                    className="text-white hover:text-yellow-200 flex gap-2 hover:cursor-pointer"
+                                >
+                                    <Icon size = {20} />
+                                    {title}
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
             </div>
         </nav>
     )

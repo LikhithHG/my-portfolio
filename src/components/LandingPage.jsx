@@ -1,11 +1,12 @@
 import {motion} from "framer-motion";
 import { useState, useEffect } from "react";
-//import { TypeAnimation } from "react-type-animation";
 import { greetings } from "../utils/Constants";
+import { socialMediaLinks } from "../utils/Constants";
 
 const LandingPage = () => {
 
     const [index, setIndex] = useState(0);
+    const [firstTime, setFirstTime] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -15,28 +16,73 @@ const LandingPage = () => {
         return () => clearInterval(interval); // this will Cleanup on unmount
     }, []);
 
-    return (
-        <div className="landing-page h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-600 to-blue-500 text-white text-center px-6">
-            {/**Animated Heading  Installed Framer Motion "npm install framer-motion"*/}
-            <motion.h1 
-                 key={index} // Ensures animation restarts for each new greeting
-                 initial={{ opacity: 0, y: -10 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 exit={{ opacity: 0, y: 10, scale: 0.9 }}
-                 transition={{ duration: 0.8 }} // Smooth fade transition
-                 className={`text-5xl font-bold transition-all duration-300 ease-in-out cursor-pointer ${greetings[index].color} ${greetings[index].glow}`} // Dynamic color
-            >
-                {greetings[index].text}
-            </motion.h1>
-            <h1 className="text-5xl font-bold">
-                I am Likhith
-            </h1>
+    useEffect(() => {
+        if(!firstTime)
+            setFirstTime(true);
+    }, []); //Runs only for first time
 
-            <h2 
-                className="text-2xl mt-3"
+    return (
+        <div 
+            id='landing-page'
+            className="h-screen flex flex-col items-start justify-center text-center md:ml-32 px-6"
+        >
+            {/**Animated Heading  Installed Framer Motion "npm install framer-motion"*/}
+            <motion.div
+                key={index} // Ensures animation restarts for each new greeting
+                initial={firstTime ? {} : { opacity: 0, y: -30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5, delay: 0.5, ease: 'easeOut' }} 
+                className="transition-all duration-300 ease-in-out cursor-pointer"
             >
-                Front End Developer
-            </h2>
+                <div
+                    className="md:text-3xl text-gray-200 font-[Pacifico] font-semibold flex items-center gap-2"
+                >
+                    {greetings[index].icon}
+                    <span>{greetings[index].text}</span>
+                </div>
+                
+            </motion.div>
+            <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+                className="mt-4"
+            >
+                <h1 className="text-xl md:text-5xl font-semibold  font-[Noto_Serif] tracking-wider md:mb-4 bg-gradient-to-br from-[#FFD700] to-[#20B2AA] bg-clip-text text-transparent">
+                    <span className="md:text-3xl text-lg text-gray-200">I'm</span> Likhith Murthy
+                </h1>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+                className="mt-4"
+            >
+                <p className="md:text-2xl text-lg text-gray-200 font-semibold  font-[Noto_Serif]">
+                    Software Developer driven by curiosity, innovation, and problem-solving
+                </p>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5, delay: 0.5, ease: 'easeOut' }} 
+                className="flex transition-all duration-300 ease-in-out mt-2 gap-2 md:mt-6 md:gap-8 items-center"
+            >
+                {socialMediaLinks.map((socialMediaLink) => (
+                    <motion.a
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: true, amount: 0.7 }}
+                        href={socialMediaLink.url}
+                        key={socialMediaLink.name}
+                        target="_blank" //Opens in New Tab
+                        rel="noopener noreferrer" //Prevents security issues
+                        className="cursor-pointer"
+                    >
+                        <socialMediaLink.icon className={`h-3 w-3 md:h-7 w-7 ${socialMediaLink.color}`}/>
+                    </motion.a>
+                ))}
+            </motion.div>
         </div>
     )
 }

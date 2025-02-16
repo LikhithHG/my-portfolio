@@ -1,6 +1,9 @@
 const Experience = () => {
     return (
-        <div className="h-screen flex items-center justify-center bg-gray-800 text-white">
+        <div 
+            id='experience'
+            className="h-screen flex items-center justify-center bg-gray-800 text-white"
+        >
             <h1 className="text-4xl font-bold">My Experience</h1>
         </div>
     )
