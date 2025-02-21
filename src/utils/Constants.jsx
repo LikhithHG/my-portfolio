@@ -42,3 +42,22 @@ export const socialMediaLinks = [
         color: "text-yellow-500", // LeetCode Yellow
     },
 ]
+
+export const educationInformation = [
+    {
+        university: "University of Colorado Denver",
+        degree: "MS Computer Science",
+        startYear: "Aug  2023",
+        endYear: "May 2025",
+        accomplishment: "Teaching Assistant under Prof. David Ogle",
+        logo: "/src/assets/logo/cudenver.png",
+    },
+    {
+        university: "Siddaganga Institute of Technology",
+        degree: "B.E Information Science and Engineering",
+        startYear: "Aug 2016 ",
+        endYear: "May 2020",
+        accomplishment: "Gold Medalist for highest GPA",
+        logo: "/src/assets/logo/sit.png",
+    },
+];
