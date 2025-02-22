@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from './components/Navbar';
 import "./App.css"
+import Skills from './pages/Skills/skills';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
                 <LandingPage />
             </section>
             <About />
+            <Skills />
             <Experience />
             <Projects />
             <Contact />

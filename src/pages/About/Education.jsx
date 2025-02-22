@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const Education = () => {
     return (
-        <div className="py-3 md:py-4">
+        <div className="">
             <p className="text-xl md:text-2xl font-bold text-white">
                 My Academic Journey
             </p>
-            <div className="flex flex-col gap-y-4 mt-4">
+            <div className="flex flex-col gap-y-4 mt-2">
                 {educationInformation.map((education) => {
                     const {university, degree, startYear, endYear, accomplishment, logo} = education;
                     return (
