@@ -26,7 +26,7 @@ const About = () => {
   return (
     <section
       id = 'about'
-      className = 'h-screen py-16 px-6 md:px-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900'
+      className = 'h-screen py-16 px-6 md:px-20 bg-gray-900'
     >
       <div className="flex flex-col justify-center items-center py-10">
         <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent mb-6 mt-[-20px]">

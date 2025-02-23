@@ -3,7 +3,7 @@ import { navigationLinks } from "../utils/Route";
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 w-full bg-transparent z-50">
+        <nav className="fixed top-0 left-0 w-full backdrop-blur z-50">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 <h1 className="text-yellow-400 text-2xl font-semibold font-[Dancing_Script]">
                     <Link 

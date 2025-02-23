@@ -1,9 +1,8 @@
 import { FaGithub, FaHandsPraying, FaLinkedin } from "react-icons/fa6";
-import { FaRegHandshake, FaOm, FaJs, FaReact,  FaExchangeAlt, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss3, FaBootstrap, FaGitAlt, FaDocker, FaAws, FaSyncAlt, FaProjectDiagram, FaWater } from "react-icons/fa";
+import { FaRegHandshake, FaOm } from "react-icons/fa";
 import { GiShintoShrine } from "react-icons/gi";
-import { SiLeetcode, SiTailwindcss, SiRedux, SiMongodb, SiMysql, SiNginx, SiTypescript } from "react-icons/si";
-import { VscJson } from "react-icons/vsc";
-import { TbTopologyComplex, TbTopologyFullHierarchy } from "react-icons/tb";
+import { SiLeetcode, } from "react-icons/si";
+
 
 export const greetings = [
     { text: "Hello", icon: <FaRegHandshake className="text-blue-500" /> },
@@ -53,34 +52,108 @@ export const educationInformation = [
 ];
 
 export const skills = [
-    { title: 'JavaScript', level: 'Advanced', icon: <FaJs /> },
-    { title: 'React.JS', level: 'Advanced', icon: <FaReact /> },
-    { title: 'Node.JS', level: 'Intermediate', icon: <FaNodeJs /> },
-    { title: 'Python', level: 'Intermediate', icon: <FaPython /> },
-    { title: 'Java', level: 'Good', icon: <FaJava /> },
-    { title: 'TypeScript', level: 'Intermediate', icon: <SiTypescript /> },
-    { title: 'HTML', level: 'Advanced', icon: <FaHtml5 /> },
-    { title: 'CSS', level: 'Intermediate', icon: <FaCss3 /> },
-    { title: 'Bootstrap', level: 'Intermediate', icon: <FaBootstrap /> },
-    { title: 'TailwindCSS', level: 'Intermediate', icon: <SiTailwindcss /> },
-    { title: 'JSON', level: 'Intermediate', icon: <VscJson /> },
-    { title: 'React-Redux', level: 'Intermediate', icon: <SiRedux /> },
-    { title: 'REST API', level: 'Advanced', icon: <FaExchangeAlt /> }, // Fixed icon
-    { title: 'NoSQL', level: 'Intermediate', icon: <SiMongodb /> },
-    { title: 'MySQL', level: 'Intermediate', icon: <SiMysql /> },
-    { title: 'MongoDB', level: 'Intermediate', icon: <SiMongodb /> },
-    { title: 'Git', level: 'Advanced', icon: <FaGitAlt /> },
-    { title: 'GitHub', level: 'Advanced', icon: <FaGithub /> },
-    { title: 'OOPs', level: 'Advanced', icon: <TbTopologyFullHierarchy /> },
-    { title: 'Computer Network', level: 'Advanced', icon: <TbTopologyComplex /> },
-    { title: 'Distributed Computing', level: 'Basic', icon: <TbTopologyComplex /> },
-    { title: 'Nmap', level: 'Intermediate', icon: <TbTopologyComplex /> },
-    { title: 'NS2', level: 'Intermediate', icon: <SiNginx /> },
-    { title: 'NetworkX', level: 'Intermediate', icon: <TbTopologyComplex /> },
-    { title: 'Cyber-security', level: 'Intermediate', icon: <FaExchangeAlt /> },
-    { title: 'AWS', level: 'Intermediate', icon: <FaAws /> },
-    { title: 'Docker', level: 'Intermediate', icon: <FaDocker /> },
-    { title: 'SDLC', level: 'Intermediate', icon: <FaSyncAlt /> }, // Fixed icon
-    { title: 'Agile', level: 'Advanced', icon: <FaProjectDiagram /> }, // Fixed icon
-    { title: 'Waterfall', level: 'Intermediate', icon: <FaWater /> } // Fixed icon
+    { title: 'JavaScript', level: 'Advanced', image: 'src/assets/logo/javascript.svg' },
+    { title: 'React.JS', level: 'Advanced', image: 'src/assets/logo/react.svg' },
+    { title: 'Node.JS', level: 'Intermediate', image: 'src/assets/logo/nodejs.svg' },
+    { title: 'Python', level: 'Intermediate', image: 'src/assets/logo/python.svg' },
+    { title: 'Java', level: 'Good', image: 'src/assets/logo/java.png' },
+    { title: 'TypeScript', level: 'Intermediate', image: 'src/assets/logo/typescript.svg' },
+    { title: 'HTML', level: 'Advanced', image: 'src/assets/logo/html5.svg' },
+    { title: 'CSS', level: 'Intermediate', image: 'src/assets/logo/css.svg' },
+    { title: 'TailwindCSS', level: 'Intermediate', image: 'src/assets/logo/tailwindcss.svg' },
+    { title: 'ReactRedux', level: 'Intermediate', image: 'src/assets/logo/redux.svg' },
+    { title: 'ReactNative', level: 'Intermediate', image: 'src/assets/logo/reactNative.png' },
+    { title: 'NextJS', level: 'Intermediate', image: 'src/assets/logo/nextjs.png' },
+    { title: 'MySQL', level: 'Intermediate', image: 'src/assets/logo/mysql.png' },
+    { title: 'MongoDB', level: 'Intermediate', image: 'src/assets/logo/mongodb.svg' },
+    { title: 'Git', level: 'Advanced', image: 'src/assets/logo/git.svg' },
+    { title: 'OOPs', level: 'Advanced', image: 'src/assets/logo/oops.png' },
+    { title: 'Computer Network', level: 'Advanced', image: 'src/assets/logo/computernetwork.png' },
+    { title: 'CyberSecurity', level: 'Intermediate', image: 'src/assets/logo/cybersecurity.png' },
+    { title: 'AWS', level: 'Intermediate', image: 'src/assets/logo/aws.png' },
+    { title: 'SDLC', level: 'Intermediate', image: 'src/assets/logo/sdlc.png' }, 
+];
+
+export const experience = [
+    {
+        title: "Teaching Assistant",
+        company: "University of Colorado Denver",
+        logo: "src/assets/logo/cudenver.png",
+        duration: "Jan 2024 - Present",
+        description: "Mentored students, graded assignments, and conducted tutorial sessions under Prof. Dave Ogle.",
+        galleryLink: "/gallery",
+    },
+    {
+        title: "Network Software Engineer",
+        company: "Oracle Cerner",
+        logo: "src/assets/logo/oraclecerner.png",
+        duration: "Jun 2020 - Jul 2023",
+        description: "Developed and optimized software and network automation solutions for healthcare applications.",
+        galleryLink: "/gallery",
+    },
+    {
+        title: "Software - System Intern",
+        company: "Cerner",
+        logo: "src/assets/logo/cerner.png",
+        duration: "Jan 2020 - Jun 2020",
+        description: "Worked on real-time data analytics for healthcare applications, improving data processing speeds.",
+        galleryLink: "/gallery",
+    },
+];
+
+export const galleryImages = [
+    {
+        id: 1,
+        category: "Teaching Assistant",
+        src: "/src/assets/gallery/DaveOgle.jpg",
+        alt: "Image"
+    },
+    {
+        id: 2,
+        category: "Teaching Assistant",
+        src: "/src/assets/gallery/TA Class 1.jpg",
+        alt: "Image"
+    },
+    {
+        id: 3,
+        category: "Teaching Assistant",
+        src: "/src/assets/gallery/TA Class 2.jpg",
+        alt: "Image"
+    },
+    {
+        id: 4,
+        category: "Teaching Assistant",
+        src: "/src/assets/gallery/TA Class 3.jpg",
+        alt: "Image"
+    },
+    {
+        id: 5,
+        category: "Network Software Engineer",
+        src: "/src/assets/gallery/Office.jpg",
+        alt: "Network Engineer 2"
+    },
+    {
+        id: 6,
+        category: "Network Software Engineer",
+        src: "/src/assets/gallery/cubical.jpg",
+        alt: "Network Engineer 2"
+    },
+    {
+        id: 7,
+        category: "Internship",
+        src: "/src/assets/gallery/CernerOffer.jpg",
+        alt: "Internship"
+    },
+    {
+        id: 8,
+        category: "Internship",
+        src: "/src/assets/gallery/Internship Dinner.jpg",
+        alt: "Internship"
+    },
+    {
+        id: 9,
+        category: "Internship",
+        src: "/src/assets/gallery/Internship1.jpg",
+        alt: "Internship"
+    },
 ];
