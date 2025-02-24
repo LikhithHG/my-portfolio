@@ -3,26 +3,11 @@ import { useState } from "react";
 import BasicInfo from "./BasicInfo";
 import Education from "./Education";
 import about from '/src/assets/about.jpeg'
-import signature from '/src/assets/gif/signature.gif'
+import signature from '/src/assets/signature.gif'
 
 const About = () => {
 
-  const [activeTab, setActiveTab] = useState('BasicInfo')
-
-  //Variable for the floating animations
-  const floatingIcons = {
-    animate: {
-        x: [0, Math.random() * 50 - 25, Math.random() * -50 + 25, 0],
-        y: [0, Math.random() * 50 - 25, Math.random() * -50 + 25, 0],
-        rotate: [0, 360],
-        transition: {
-          duration: 4,
-          repeat: Infinity,
-          repeatType: "mirror",
-          ease: "easeInOut",
-      },
-    },
-  };
+  const [activeTab, setActiveTab] = useState('BasicInfo');
 
   return (
     <section

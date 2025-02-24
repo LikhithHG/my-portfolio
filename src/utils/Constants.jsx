@@ -54,7 +54,7 @@ export const educationInformation = [
         startYear: "Aug  2023",
         endYear: "May 2025",
         accomplishment: "Teaching Assistant under Prof. David Ogle",
-        logo: "/src/assets/logo/cudenver.png",
+        logo: "/src/assets/cudenver.png",
     },
     {
         university: "Siddaganga Institute of Technology",
@@ -62,38 +62,38 @@ export const educationInformation = [
         startYear: "Aug 2016 ",
         endYear: "May 2020",
         accomplishment: "Gold Medalist for highest GPA",
-        logo: "/src/assets/logo/sit.png",
+        logo: "/src/assets/sit.png",
     },
 ];
 
 export const skills = [
-    { title: 'JavaScript', level: 'Advanced', image: 'src/assets/logo/javascript.svg' },
-    { title: 'React.JS', level: 'Advanced', image: 'src/assets/logo/react.svg' },
-    { title: 'Node.JS', level: 'Intermediate', image: 'src/assets/logo/nodejs.svg' },
-    { title: 'Python', level: 'Intermediate', image: 'src/assets/logo/python.svg' },
-    { title: 'Java', level: 'Good', image: 'src/assets/logo/java.png' },
-    { title: 'TypeScript', level: 'Intermediate', image: 'src/assets/logo/typescript.svg' },
-    { title: 'HTML', level: 'Advanced', image: 'src/assets/logo/html5.svg' },
-    { title: 'CSS', level: 'Intermediate', image: 'src/assets/logo/css.svg' },
-    { title: 'TailwindCSS', level: 'Intermediate', image: 'src/assets/logo/tailwindcss.svg' },
-    { title: 'ReactRedux', level: 'Intermediate', image: 'src/assets/logo/redux.svg' },
-    { title: 'ReactNative', level: 'Intermediate', image: 'src/assets/logo/reactNative.png' },
-    { title: 'NextJS', level: 'Intermediate', image: 'src/assets/logo/nextjs.png' },
-    { title: 'MySQL', level: 'Intermediate', image: 'src/assets/logo/mysql.png' },
-    { title: 'MongoDB', level: 'Intermediate', image: 'src/assets/logo/mongodb.svg' },
-    { title: 'Git', level: 'Advanced', image: 'src/assets/logo/git.svg' },
-    { title: 'OOPs', level: 'Advanced', image: 'src/assets/logo/oops.png' },
-    { title: 'Computer Network', level: 'Advanced', image: 'src/assets/logo/computernetwork.png' },
-    { title: 'CyberSecurity', level: 'Intermediate', image: 'src/assets/logo/cybersecurity.png' },
-    { title: 'AWS', level: 'Intermediate', image: 'src/assets/logo/aws.png' },
-    { title: 'SDLC', level: 'Intermediate', image: 'src/assets/logo/sdlc.png' }, 
+    { title: 'JavaScript', level: 'Advanced', image: 'src/assets/javascript.svg' },
+    { title: 'React.JS', level: 'Advanced', image: 'src/assets/react.svg' },
+    { title: 'Node.JS', level: 'Intermediate', image: 'src/assets/nodejs.svg' },
+    { title: 'Python', level: 'Intermediate', image: 'src/assets/python.svg' },
+    { title: 'Java', level: 'Good', image: 'src/assets/java.png' },
+    { title: 'TypeScript', level: 'Intermediate', image: 'src/assets/typescript.svg' },
+    { title: 'HTML', level: 'Advanced', image: 'src/assets/html5.svg' },
+    { title: 'CSS', level: 'Intermediate', image: 'src/assets/css.svg' },
+    { title: 'TailwindCSS', level: 'Intermediate', image: 'src/assets/tailwindcss.svg' },
+    { title: 'ReactRedux', level: 'Intermediate', image: 'src/assets/redux.svg' },
+    { title: 'ReactNative', level: 'Intermediate', image: 'src/assets/reactNative.png' },
+    { title: 'NextJS', level: 'Intermediate', image: 'src/assets/nextjs.png' },
+    { title: 'MySQL', level: 'Intermediate', image: 'src/assets/mysql.png' },
+    { title: 'MongoDB', level: 'Intermediate', image: 'src/assets/mongodb.svg' },
+    { title: 'Git', level: 'Advanced', image: 'src/assets/git.svg' },
+    { title: 'OOPs', level: 'Advanced', image: 'src/assets/oops.png' },
+    { title: 'Computer Network', level: 'Advanced', image: 'src/assets/computernetwork.png' },
+    { title: 'CyberSecurity', level: 'Intermediate', image: 'src/assets/cybersecurity.png' },
+    { title: 'AWS', level: 'Intermediate', image: 'src/assets/aws.png' },
+    { title: 'SDLC', level: 'Intermediate', image: 'src/assets/sdlc.png' }, 
 ];
 
 export const experience = [
     {
         title: "Teaching Assistant",
         company: "University of Colorado Denver",
-        logo: "src/assets/logo/cudenver.png",
+        logo: "src/assets/cudenver.png",
         duration: "Jan 2024 - Present",
         description: "Mentored students, graded assignments, and conducted tutorial sessions under Prof. Dave Ogle.",
         galleryLink: "/gallery",
@@ -101,7 +101,7 @@ export const experience = [
     {
         title: "Network Software Engineer",
         company: "Oracle Cerner",
-        logo: "src/assets/logo/oraclecerner.png",
+        logo: "src/assets/oraclecerner.png",
         duration: "Jun 2020 - Jul 2023",
         description: "Developed and optimized software and network automation solutions for healthcare applications.",
         galleryLink: "/gallery",
@@ -109,7 +109,7 @@ export const experience = [
     {
         title: "Software - System Intern",
         company: "Cerner",
-        logo: "src/assets/logo/cerner.png",
+        logo: "src/assets/cerner.png",
         duration: "Jan 2020 - Jun 2020",
         description: "Worked on real-time data analytics for healthcare applications, improving data processing speeds.",
         galleryLink: "/gallery",
@@ -120,55 +120,55 @@ export const galleryImages = [
     {
         id: 1,
         category: "Teaching Assistant",
-        src: "/src/assets/gallery/DaveOgle.jpg",
+        src: "/src/assets/DaveOgle.jpg",
         alt: "Image"
     },
     {
         id: 2,
         category: "Teaching Assistant",
-        src: "/src/assets/gallery/TA Class 1.jpg",
+        src: "/src/assets/TA Class 1.jpg",
         alt: "Image"
     },
     {
         id: 3,
         category: "Teaching Assistant",
-        src: "/src/assets/gallery/TA Class 2.jpg",
+        src: "/src/assets/TA Class 2.jpg",
         alt: "Image"
     },
     {
         id: 4,
         category: "Teaching Assistant",
-        src: "/src/assets/gallery/TA Class 3.jpg",
+        src: "/src/assets/TA Class 3.jpg",
         alt: "Image"
     },
     {
         id: 5,
         category: "Network Software Engineer",
-        src: "/src/assets/gallery/Office.jpg",
+        src: "/src/assets/Office.jpg",
         alt: "Network Engineer 2"
     },
     {
         id: 6,
         category: "Network Software Engineer",
-        src: "/src/assets/gallery/cubical.jpg",
+        src: "/src/assets/cubical.jpg",
         alt: "Network Engineer 2"
     },
     {
         id: 7,
         category: "Internship",
-        src: "/src/assets/gallery/CernerOffer.jpg",
+        src: "/src/assets/CernerOffer.jpg",
         alt: "Internship"
     },
     {
         id: 8,
         category: "Internship",
-        src: "/src/assets/gallery/Internship Dinner.jpg",
+        src: "/src/assets/Internship Dinner.jpg",
         alt: "Internship"
     },
     {
         id: 9,
         category: "Internship",
-        src: "/src/assets/gallery/Internship1.jpg",
+        src: "/src/assets/Internship1.jpg",
         alt: "Internship"
     },
 ];
