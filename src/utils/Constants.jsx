@@ -54,7 +54,7 @@ export const educationInformation = [
         startYear: "Aug  2023",
         endYear: "May 2025",
         accomplishment: "Teaching Assistant under Prof. David Ogle",
-        logo: "/src/assets/cudenver.png",
+        logo: "src/assets/cudenver.png",
     },
     {
         university: "Siddaganga Institute of Technology",
@@ -62,7 +62,7 @@ export const educationInformation = [
         startYear: "Aug 2016 ",
         endYear: "May 2020",
         accomplishment: "Gold Medalist for highest GPA",
-        logo: "/src/assets/sit.png",
+        logo: "src/assets/sit.png",
     },
 ];
 
@@ -120,55 +120,55 @@ export const galleryImages = [
     {
         id: 1,
         category: "Teaching Assistant",
-        src: "/src/assets/DaveOgle.jpg",
+        src: "src/assets/DaveOgle.jpg",
         alt: "Image"
     },
     {
         id: 2,
         category: "Teaching Assistant",
-        src: "/src/assets/TA Class 1.jpg",
+        src: "src/assets/TA Class 1.jpg",
         alt: "Image"
     },
     {
         id: 3,
         category: "Teaching Assistant",
-        src: "/src/assets/TA Class 2.jpg",
+        src: "src/assets/TA Class 2.jpg",
         alt: "Image"
     },
     {
         id: 4,
         category: "Teaching Assistant",
-        src: "/src/assets/TA Class 3.jpg",
+        src: "src/assets/TA Class 3.jpg",
         alt: "Image"
     },
     {
         id: 5,
         category: "Network Software Engineer",
-        src: "/src/assets/Office.jpg",
+        src: "src/assets/Office.jpg",
         alt: "Network Engineer 2"
     },
     {
         id: 6,
         category: "Network Software Engineer",
-        src: "/src/assets/cubical.jpg",
+        src: "src/assets/cubical.jpg",
         alt: "Network Engineer 2"
     },
     {
         id: 7,
         category: "Internship",
-        src: "/src/assets/CernerOffer.jpg",
+        src: "src/assets/CernerOffer.jpg",
         alt: "Internship"
     },
     {
         id: 8,
         category: "Internship",
-        src: "/src/assets/Internship Dinner.jpg",
+        src: "src/assets/Internship Dinner.jpg",
         alt: "Internship"
     },
     {
         id: 9,
         category: "Internship",
-        src: "/src/assets/Internship1.jpg",
+        src: "src/assets/Internship1.jpg",
         alt: "Internship"
     },
 ];
