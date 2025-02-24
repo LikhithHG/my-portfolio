@@ -2,7 +2,6 @@ import { FaGithub, FaHandsPraying, FaLinkedin } from "react-icons/fa6";
 import { FaRegHandshake, FaOm } from "react-icons/fa";
 import { GiShintoShrine } from "react-icons/gi";
 import { SiLeetcode, } from "react-icons/si";
-import about from "../assets/about.jpeg";
 import aws from "../assets/aws.png";
 import cerner from "../assets/cerner.png";
 import cernerOffer from "../assets/CernerOffer.jpg";
