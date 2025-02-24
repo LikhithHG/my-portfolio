@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import { useState, useEffect } from "react";
 import { greetings } from "../utils/Constants";
-import { socialMediaLinks } from "../utils/Constants";
+import { technicalEcoSystems } from "../utils/Constants";
 
 const LandingPage = () => {
 
@@ -68,18 +68,20 @@ const LandingPage = () => {
                 transition={{ duration: 1.5, delay: 0.5, ease: 'easeOut' }} 
                 className="flex transition-all duration-300 ease-in-out mt-2 gap-2 md:mt-6 md:gap-8 items-center"
             >
-                {socialMediaLinks.map((socialMediaLink) => (
+                {technicalEcoSystems.map((technicalEcoSystem) => (
                     <motion.a
+                        key={technicalEcoSystem.title}
                         initial="hidden"
                         whileInView={"show"}
+                        whileHover={{scale: 1.2}}
                         viewport={{ once: true, amount: 0.7 }}
-                        href={socialMediaLink.url}
-                        key={socialMediaLink.name}
+                        href={technicalEcoSystem.url}
+                        title={technicalEcoSystem.title}
                         target="_blank" //Opens in New Tab
                         rel="noopener noreferrer" //Prevents security issues
                         className="cursor-pointer"
                     >
-                        <socialMediaLink.icon className={`h-3 w-3 md:h-7 w-7 ${socialMediaLink.color}`}/>
+                        <technicalEcoSystem.icon className={`h-3 w-3 md:h-7 md:w-7 ${technicalEcoSystem.color}`}/>
                     </motion.a>
                 ))}
             </motion.div>

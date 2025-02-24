@@ -1,11 +1,12 @@
 import LandingPage from './components/LandingPage';
 import About from "./pages/About/About";
 import Experience from "./pages/Experience/Experience";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 import Navbar from './components/Navbar';
 import "./App.css"
 import Skills from './pages/Skills/Skills';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
             <Experience />
             <Projects />
             <Contact />
+            <Footer />
         </div>
     ) 
 }

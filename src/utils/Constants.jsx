@@ -2,6 +2,8 @@ import { FaGithub, FaHandsPraying, FaLinkedin } from "react-icons/fa6";
 import { FaRegHandshake, FaOm } from "react-icons/fa";
 import { GiShintoShrine } from "react-icons/gi";
 import { SiLeetcode, } from "react-icons/si";
+import myportfolio from "../assets/myPortFolio.png";
+import ganeshSamiti from "../assets/ganeshSamiti.png";
 
 
 export const greetings = [
@@ -11,24 +13,37 @@ export const greetings = [
     { text: "Hola,", icon: <GiShintoShrine className="text-green-500" /> },
 ];
 
-export const socialMediaLinks = [
+export const technicalEcoSystems = [
     {
-        name: "linkedin",
+        title: "linkedin",
         icon: FaLinkedin,
         url: "https://www.linkedin.com/in/likhithhg",
         color: "text-blue-500",
     },
     {
-        name: "github",
+        title: "github",
         icon: FaGithub,
         url: "https://github.com/LikhithHG",
         color: "text-white", // White for GitHub
     },
     {
-        name: "leetcode",
+        title: "leetcode",
         icon: SiLeetcode,
         url: "https://leetcode.com/u/Likhith2006/",
         color: "text-yellow-500", // LeetCode Yellow
+    },
+];
+
+export const projects = [
+    {
+      title: "Likhith's Portfolio",
+      img: myportfolio,
+      link: "https://github.com/LikhithHG/my-portfolio",
+    },
+    {
+      title: "Indian Festival Website",
+      img: ganeshSamiti,
+      link: "https://github.com/LikhithHG/Ganesha",
     },
 ];
 
