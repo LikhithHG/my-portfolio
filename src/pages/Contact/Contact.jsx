@@ -1,6 +1,7 @@
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
+import contactme from '/src/assets/contactme.png';
 
 const Contact = () => {
 
@@ -36,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div className="basis-3/5">
                     <img 
-                        src = '/src/assets/contactme.png'
+                        src = {contactme}
                         alt = 'Contact Me Logo'
                     />
                     

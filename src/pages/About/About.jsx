@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import BasicInfo from "./BasicInfo";
 import Education from "./Education";
+import about from '/src/assets/about.jpeg'
 import signature from '/src/assets/gif/signature.gif'
 
 const About = () => {
@@ -37,7 +38,7 @@ const About = () => {
         {/** Left side profile photo and skills floating around the photo */}
         <div className = 'relative w-full md:w-1/3 flex justify-center'>
           <motion.img
-            src = '/src/assets/about.jpeg'
+            src = {about}
             alt = 'Likhith Murthy'
             className="w-60 h-60 md:w-96 md:h-96 rounded-full object-cover shadow-lg border-4 border-gray-500"
             initial={{ opacity: 0, scale: 0.8 }}
